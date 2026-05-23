@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Details</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <h3>Jeet Patel</h3>
+            <ul class="nav-links">
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="grade.html">Grade Converter</a></li>
+                <li><a href="staff.html" class="active">Staff</a></li>
+                <li><a href="temperature.html">Temperature</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="table-card">
+        <table>
+            <thead>
+                <tr>
+                    <th onclick="sortName()" id="name">Name ⇅</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>ID</th>
+                    <th>Start Date</th>
+                    <th onclick="sortSalary()" id="salary">Salary ⇅</th>
+                </tr>
+            </thead>
+
+            <tbody id="staffData"></tbody>
+
+        </table>
+    </div>
+
+    <footer>
+        <p>Copyright © 2026 Jeet Patel</p>
+        <p>Today: <span id="currentDate"></span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
