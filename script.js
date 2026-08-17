@@ -44,7 +44,7 @@ function MarkToGrade() {
     }
     else {
         grade = "F";
-        document.getElementById("message").innerText = mark + " :  Failing — Below the passing.";
+        document.getElementById("message").innerText = mark + " :  Failing.";
     }
 
     document.getElementById("grade").innerHTML = "Grade: " + grade;
